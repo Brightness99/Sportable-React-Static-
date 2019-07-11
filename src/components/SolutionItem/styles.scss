@@ -1,0 +1,16 @@
+@import 'assets/styles/variables.scss';
+
+.solution-item {
+  .container > * {
+    max-width: 80%;
+  }
+  h1 {
+    color: white;
+  }
+
+  img {
+    width: 67px;
+    height: 21px;
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,83 @@
+@import 'assets/styles/variables.scss';
+
+.analysis-section {
+  .analysis-section-header {
+    padding: 260px 0 100px;
+
+    @media (min-width: 992px) {
+      padding: 316px 0 133px;
+    }
+
+    h1 {
+      width: 100%;
+
+      @media (min-width: 992px) {
+        width: 60%;
+      }
+
+      &.small {
+        margin: 35px 0 42px;
+      }
+    }
+
+    h6 {
+      width: 100%;
+
+      @media (min-width: 992px) {
+        width: 20%;
+      }
+    }
+  }
+
+  .analysis-section-body {
+    background: $dark;
+    padding: 50px 0;
+
+    @media (min-width: 992px) {
+      padding: 109px 0 97px;
+    }
+
+    .container {
+      @media (min-width: 992px) {
+        display: flex;
+      }
+
+      .analysis-item {
+        display: flex;
+        flex: 1;
+        border-bottom: solid 1px $grey;
+        padding: 30px 0;
+        
+        @media (min-width: 992px) {
+          padding: 0 70px;
+          border-bottom: none;
+          border-right: solid 1px $grey;
+        }
+        
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          border-right: none;
+          border-bottom: none;
+        }
+
+        img {
+          width: 59px;
+          object-fit: contain;
+          height: 65px;
+        }
+
+        .item-details {
+          margin-left: 57px;
+
+          h5, h6 {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import 'assets/styles/variables.scss';
+
+.menu {
+
+  .header-items {
+    a {
+      display: block;
+      text-decoration: none;
+      color: $white;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      color: $white;
+      text-transform: capitalize;
+    }
+  }
+
+  .footer-items {
+    margin-top: 60px;
+    
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

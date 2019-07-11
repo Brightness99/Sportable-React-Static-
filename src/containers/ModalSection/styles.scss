@@ -1,0 +1,45 @@
+@import 'assets/styles/variables.scss';
+
+.modal-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $red-light;
+  z-index: 9999;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 47px;
+
+    .modal-logo {
+      width: 220px;
+      left: 80px;
+      top: 47px;
+      z-index: 9999;
+    }
+  
+    .modal-button {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .modal-white-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 59px;
+    height: 1px;
+    background: $white;
+    z-index: 9998;
+  }
+
+  .modal-content {
+    margin-top: 59px;
+  }
+}

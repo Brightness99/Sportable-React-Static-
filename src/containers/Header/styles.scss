@@ -1,0 +1,66 @@
+@import 'assets/styles/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: $black;
+  z-index: 9999;
+
+  @media (min-width: 992px) {
+    height: 215px;
+  }
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 47px;
+
+    .header-logo {
+      width: 220px;
+      left: 80px;
+      top: 47px;
+      z-index: 9999;
+    }
+  
+    .header-button {
+      background: transparent;
+      border: none;
+      outline: none;
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .header-white-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 59px;
+    height: 1px;
+    background: $white;
+    z-index: 9998;
+  }
+
+  .header-items {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: inline-block;
+    }
+
+    a {
+      font-family: "Adieu-Regular";
+      color: white;
+      font-size: 16px;
+      padding: 0 25px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+  }
+}

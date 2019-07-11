@@ -1,0 +1,11 @@
+.custom-arrow {
+  svg {
+    width: 7.4px;
+    height: 12px;
+
+    @media (min-width: 992px) {
+      width: 35px;
+      height: 56px;
+    }
+  }
+}

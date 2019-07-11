@@ -1,0 +1,89 @@
+@import './variables.scss';
+@import './fonts.scss';
+@import './global.scss';
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'MarkPro-Regular Helvetica', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin-top: 180px;
+
+  @media (min-width: 992px) {
+    margin-top: 215px;
+  }
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+}
+
+.slick-slider {
+  padding-bottom: 58px;
+
+  .slick-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 56px;
+    z-index: 9;
+    top: 60%;
+
+    &.white-arrow {
+      svg path {
+        fill: $white;
+      }
+    }
+
+    &.slick-disabled {
+      visibility: hidden;
+    }
+
+    & > span {
+      display: block;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &.slick-prev {
+      left: -25px;
+    }
+
+    &.slick-next {
+      right: -25px;
+    }
+  }
+
+  .slick-dots {
+    li button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: transparent;
+      border: solid 1px $white;
+
+      &:before {
+        display: none;
+      }
+    }
+    
+    li.slick-active button {
+      background: white;
+    }
+  }
+}

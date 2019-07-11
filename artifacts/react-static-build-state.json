@@ -1,0 +1,62 @@
+{
+  "entry": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/src/index.js",
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "plugins": [
+    [
+      "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/src/pages"
+      }
+    ],
+    "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules/react-static-plugin-sass/node.api.js",
+    "/Volumes/Data/Developer/ReactJS/Sportable/Sportable"
+  ],
+  "paths": {
+    "ROOT": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable",
+    "SRC": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/src",
+    "DIST": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/dist",
+    "ASSETS": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/dist",
+    "PLUGINS": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/plugins",
+    "TEMP": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/tmp",
+    "ARTIFACTS": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/artifacts",
+    "PUBLIC": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/public",
+    "NODE_MODULES": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules",
+    "EXCLUDE_MODULES": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/node_modules",
+    "PACKAGE": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/package.json",
+    "HTML_TEMPLATE": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/dist/index.html",
+    "STATIC_DATA": "/Volumes/Data/Developer/ReactJS/Sportable/Sportable/dist/staticData"
+  },
+  "devServer": {
+    "host": "http://localhost",
+    "port": 3000
+  },
+  "babelExcludes": [],
+  "siteRoot": "",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

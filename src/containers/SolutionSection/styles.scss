@@ -1,0 +1,83 @@
+@import 'assets/styles/variables.scss';
+
+.solution-section {
+  background: $dark;
+  padding: 118px 0 76px;
+
+  @media (min-width: 992px) {
+    padding-top: 176px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 107px;
+    }
+  }
+
+  .solution-details {
+    position: relative;
+
+    .solution-detail {
+      max-width: 543px;
+      display: flex;
+      margin-bottom: 60px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 77px;
+      }
+
+      svg {
+        display: inline-block;
+        width: 7.4px;
+        height: 12px;
+        margin-left: 12px;
+
+        @media (min-width: 992px) {
+          display: none;
+        }
+        
+        path {
+          fill: $white;
+        }
+      }
+
+      img {
+        margin-right: 15px;
+        width: 67px;
+        height: 21px;
+
+        @media (min-width: 992px) {
+          margin-right: 25px;
+          width: 92px;
+          height: 28px;
+        }
+      }
+      h6 {
+        display: none;
+
+        @media (min-width: 992px) {
+          color: white;
+          margin-top: 23px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .sport-number {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 160px;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+}

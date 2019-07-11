@@ -1,0 +1,101 @@
+@import 'assets/styles/variables.scss';
+
+.technology-section {
+
+  .technology-header {
+    padding: 272px 0 60px;
+    background: url('/images/lines2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 992px) {
+      padding: 382px 0 165px;
+
+      h1 {
+        width: 500px;
+      }
+    }
+  }
+
+  .technology-body {
+    padding: 100px 0;
+    background: $dark;
+
+    .slick-slider {
+
+      .slick-slide {
+        .technology-item > img,
+        .technology-item > h1 {
+          margin-left: 0;
+          margin-right: 0;
+          width: unset;
+          visibility: hidden;
+
+          @media (min-width: 992px) {
+            visibility: visible;
+          }
+        }
+
+        .left-content {
+          transform: scaleY(0.75);
+          margin: 0 45px;
+          width: calc(100% - 90px);
+
+          @media (min-width: 992px) {
+            margin: 0 9% 0 0;
+            width: 57%;
+            transform: scaleY(1);
+          }
+        }
+        .right-content {
+          visibility: hidden;
+        }
+
+        &.slick-center {
+          .technology-item > img,
+          .technology-item > h1 {
+            margin-left: -20px;
+            margin-right: -20px;
+            width: calc(100% + 40px);
+            visibility: visible;
+          }
+          .left-content {
+            transform: scale(1);
+          }
+          .right-content {
+            visibility: visible;
+          }
+        }
+      }
+
+      .slick-list {
+        padding-right: 60px !important;
+      }
+
+      .slick-prev {
+        left: 60px;
+        top: calc(140px + 17vw);
+
+        @media (min-width: 992px) {
+          left: 0px;
+          top: calc(240px + 17vw);
+        }
+
+        @media (min-width: 1380px) {
+          left: -20px;
+        }
+      }
+
+      .slick-next {
+        right: 60px;
+        top: calc(140px + 17vw);
+
+        @media (min-width: 992px) {
+          right: 120px;
+          top: calc(240px + 17vw);
+        }
+      }
+    }
+  }
+}
