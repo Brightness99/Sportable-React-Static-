@@ -3,11 +3,6 @@ import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 
-import Header from 'containers/Header'
-import Footer from 'containers/Footer'
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import 'assets/styles/index.scss'
