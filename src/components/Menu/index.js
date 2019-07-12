@@ -3,16 +3,16 @@ import SVG from 'react-inlinesvg'
 import { Link } from 'components/Router'
 import './styles.scss'
 
-function Menu() {
+function Menu({ onClose }) {
   return (
     <div className="menu">
       <div className="container">
         <div className="header-items">
-          <Link to="#technology"><h1>Technology</h1></Link>
-          <Link to="#media"><h1>Media</h1></Link>
-          <Link to="#performance"><h1>Performance</h1></Link>
-          <Link to="#team"><h1>Team</h1></Link>
-          <Link to="#contact"><h1>Contact</h1></Link>
+          <a href="#technology" onClick={onClose}><h1>Technology</h1></a>
+          <a href="#media" onClick={onClose}><h1>Media</h1></a>
+          <a href="#performance" onClick={onClose}><h1>Performance</h1></a>
+          <a href="#team" onClick={onClose}><h1>Team</h1></a>
+          <a href="#contact" onClick={onClose}><h1>Contact</h1></a>
         </div>
         <nav className="footer-items">
           <Link to="#linkedin" className="footer-icon">

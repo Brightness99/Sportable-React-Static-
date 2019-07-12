@@ -1,6 +1,5 @@
 import React from 'react'
 import SVG from 'react-inlinesvg'
-import { Link } from 'components/Router'
 import './styles.scss'
 
 function Header({ onMenuClick }) {
@@ -14,11 +13,11 @@ function Header({ onMenuClick }) {
         </button>
 
         <nav className="header-items">
-          <Link to="#technology">TECHNOLOGY</Link>
-          <Link to="#media">MEDIA</Link>
-          <Link to="#performance">PERFORMANCE</Link>
-          <Link to="#team">TEAM</Link>
-          <Link to="#contact">CONTACT</Link>
+          <a href="#technology">TECHNOLOGY</a>
+          <a href="#media">MEDIA</a>
+          <a href="#performance">PERFORMANCE</a>
+          <a href="#team">TEAM</a>
+          <a href="#contact">CONTACT</a>
         </nav>
       </div>
     </div>

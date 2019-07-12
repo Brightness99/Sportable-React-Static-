@@ -47,7 +47,7 @@ function Landing() {
       <Footer />
       {openHeaderMenu && (
         <ModalSection onClose={() => setOpenHeaderMenu(false)} >
-          <Menu />
+          <Menu onClose={() => setOpenHeaderMenu(false)} />
         </ModalSection>
       )}
       {solutionItem && (

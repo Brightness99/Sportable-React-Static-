@@ -40,7 +40,7 @@ function TechnologySection({ data }) {
   }, [])
 
   return (
-    <div className="technology-section">
+    <div id="technology" className="technology-section">
       <div className="technology-header">
         <div className="container">
           <h1>Our Technology:</h1>

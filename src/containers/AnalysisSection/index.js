@@ -22,7 +22,7 @@ const analysisData = [
 
 function AnalysisSection() {
   return (
-    <div className="analysis-section">
+    <div id="performance" className="analysis-section">
       <div className="analysis-section-header">
         <div className="container">
           <h1>AI</h1>

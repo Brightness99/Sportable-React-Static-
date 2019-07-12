@@ -30,7 +30,7 @@ function TeamSection({ data }) {
   }
 
   return (
-    <div className="team-section">
+    <div id="team" className="team-section">
       <div className="container">
         <h4>01100100</h4>
         <h1>Our Team</h1>

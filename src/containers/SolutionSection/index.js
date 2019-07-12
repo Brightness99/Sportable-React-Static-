@@ -4,7 +4,7 @@ import './styles.scss'
 
 function SolutionSection({ data, onSelect }) {
   return (
-    <div className="solution-section">
+    <div id="media" className="solution-section">
       <div className="container">
         <h2>Solutions:</h2>
         <div className="solution-details">

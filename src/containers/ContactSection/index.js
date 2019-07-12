@@ -4,7 +4,7 @@ import './styles.scss'
 
 function ContactSection() {
   return (
-    <div className="contact-section">
+    <div id="contact" className="contact-section">
       <div className='container'>
         <h1 className="mobile">Contact</h1>
       </div>
